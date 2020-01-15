@@ -31,7 +31,7 @@ public class Helicopter {
 		return weight;
 	}
 	public void setWeight(int weight) {
-		weight = weight;
+		this.weight = weight;
 	}
 	public int getNumberOfBlade() {
 		return numberOfBlade;
@@ -55,6 +55,7 @@ public class Helicopter {
 		this.numberOfBlade = numberOfBlade;
 		this.numberOfSeats = numberOfSeats;
 		this.ñountryOfOrigin = ñountryOfOrigin;
+		numberOfHelicopter++;
 	}
 	@Override
 	public String toString() {
@@ -65,10 +66,10 @@ public class Helicopter {
 				+ ", getNumberOfBlade()=" + getNumberOfBlade() + "]";
 	}
 	public static String printStaticNumberOfHelicopter() {
-		return "static numberOfBlade=" + numberOfHelicopter;
+		return "static numberOfHelicopter=" + numberOfHelicopter;
 	}
 	public String printNumberOfHelicopter() {
-		return "numberOfBlade=" + numberOfHelicopter;
+		return "numberOfHelicopter=" + numberOfHelicopter;
 	}
 	public void resetValues(int maxLiftingWeight, String name, int maxHeight, int weight, int numberOfBlade,
 		int numberOfSeats, String ñountryOfOrigin) {
