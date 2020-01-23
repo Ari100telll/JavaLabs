@@ -9,42 +9,55 @@ public class Helicopter {
 	static int numberOfHelicopter;
 	protected int numberOfSeats;
 	protected String ñountryOfOrigin;
+
 	public int getMaxLiftingWeight() {
 		return maxLiftingWeight;
 	}
+
 	public void setMaxLiftingWeight(int maxLiftingWeight) {
 		this.maxLiftingWeight = maxLiftingWeight;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public int getMaxHeight() {
 		return maxHeight;
 	}
+
 	public void setMaxHeight(int maxHeight) {
 		this.maxHeight = maxHeight;
 	}
+
 	public int getWeight() {
 		return weight;
 	}
+
 	public void setWeight(int weight) {
 		this.weight = weight;
 	}
+
 	public int getNumberOfBlade() {
 		return numberOfBlade;
 	}
+
 	public void setNumberOfBlade(int numberOfBlade) {
 		this.numberOfBlade = numberOfBlade;
 	}
+
 	public Helicopter() {
-		this(0,"0",0,0,0,0,"0");
+		this(0, "0", 0, 0, 0, 0, "0");
 	}
+
 	public Helicopter(int maxLiftingWeight, String name, int maxHeight, int weight) {
-		this(maxLiftingWeight,name,maxHeight,weight,0,0,"0");
+		this(maxLiftingWeight, name, maxHeight, weight, 0, 0, "0");
 	}
+
 	public Helicopter(int maxLiftingWeight, String name, int maxHeight, int weight, int numberOfBlade,
 			int numberOfSeats, String ñountryOfOrigin) {
 		super();
@@ -57,6 +70,7 @@ public class Helicopter {
 		this.ñountryOfOrigin = ñountryOfOrigin;
 		numberOfHelicopter++;
 	}
+
 	@Override
 	public String toString() {
 		return "Helicopter [maxLiftingWeight=" + maxLiftingWeight + ", name=" + name + ", maxHeight=" + maxHeight
@@ -65,14 +79,17 @@ public class Helicopter {
 				+ ", getName()=" + getName() + ", getMaxHeight()=" + getMaxHeight() + ", getWeight()=" + getWeight()
 				+ ", getNumberOfBlade()=" + getNumberOfBlade() + "]";
 	}
+
 	public static String printStaticNumberOfHelicopter() {
 		return "static numberOfHelicopter=" + numberOfHelicopter;
 	}
+
 	public String printNumberOfHelicopter() {
 		return "numberOfHelicopter=" + numberOfHelicopter;
 	}
+
 	public void resetValues(int maxLiftingWeight, String name, int maxHeight, int weight, int numberOfBlade,
-		int numberOfSeats, String ñountryOfOrigin) {
+			int numberOfSeats, String ñountryOfOrigin) {
 		this.maxLiftingWeight = maxLiftingWeight;
 		this.name = name;
 		this.maxHeight = maxHeight;

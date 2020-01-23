@@ -1,7 +1,7 @@
 package lab;
 
-public class MainClass {
-	
+public class HelicopterManager {
+
 	public static void main(String[] args) {
 		Helicopter.numberOfHelicopter = 0;
 		Helicopter firstHelicopter = new Helicopter();
@@ -12,15 +12,16 @@ public class MainClass {
 		System.out.println(thirdHelicopter.toString());
 		System.out.println(thirdHelicopter.printNumberOfHelicopter());
 		System.out.println(Helicopter.printStaticNumberOfHelicopter());
-		Helicopter [] helicoptersArray = new Helicopter[4];
+		Helicopter[] helicopters = new Helicopter[4];
 		int currentHelicopterIndex = 0;
 		do {
-			helicoptersArray[currentHelicopterIndex] = new Helicopter(1000, "Hell2.0."+currentHelicopterIndex, 3000, 4500);
+			helicopters[currentHelicopterIndex] = new Helicopter(1000, "Hell2.0." + currentHelicopterIndex, 3000,
+					4500);
 			currentHelicopterIndex++;
-		}while(currentHelicopterIndex!=4);
-		for (Helicopter helicopter : helicoptersArray) {
+		} while (currentHelicopterIndex != 4);
+		for (Helicopter helicopter : helicopters) {
 			System.out.println(helicopter.toString());
 		}
 	}
-	
+
 }
